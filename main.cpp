@@ -57,7 +57,7 @@ int main()
         std::jthread thr{[&](std::stop_token st) {
             double globalBestPosition = minX,
                    globalLowestHeight = std::numeric_limits<double>::max();
-            int frame = 0;
+            int frame = 1;
 
             while (!st.stop_requested())
             {
